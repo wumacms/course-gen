@@ -1,4 +1,0 @@
-allowBuilds:
-  '@alicloud/openapi-core': true
-  '@swc/core': true
-  esbuild: true

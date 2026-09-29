@@ -5,40 +5,40 @@
 
 @theme {
   /* 品牌主色：墨绿（学院气质），文字与图表沿用中性色保证可读性 */
-  --color-primary: oklch(0.42 0.093 165.8);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-background: oklch(0.985 0.008 85);
-  --color-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.4200 0.0930 165.8000);
+  --color-primary-foreground: oklch(0.9850 0 0);
+  --color-background: oklch(0.9850 0.0080 85);
+  --color-foreground: oklch(0.1450 0 0);
   --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
+  --color-card-foreground: oklch(0.1450 0 0);
   --color-popover: oklch(1 0 0);
-  --color-popover-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.952 0.012 85);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.952 0.012 85);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.93 0.032 165);
-  --color-accent-foreground: oklch(0.28 0.06 165);
-  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-popover-foreground: oklch(0.1450 0 0);
+  --color-primary: oklch(0.2050 0 0);
+  --color-primary-foreground: oklch(0.9850 0 0);
+  --color-secondary: oklch(0.9520 0.0120 85);
+  --color-secondary-foreground: oklch(0.2050 0 0);
+  --color-muted: oklch(0.9520 0.0120 85);
+  --color-muted-foreground: oklch(0.5560 0 0);
+  --color-accent: oklch(0.9300 0.0320 165);
+  --color-accent-foreground: oklch(0.2800 0.0600 165);
+  --color-destructive: oklch(0.5770 0.2450 27.3250);
   --color-destructive-foreground: oklch(1 0 0);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
-  --color-sidebar: oklch(0.985 0 0);
-  --color-sidebar-foreground: oklch(0.145 0 0);
-  --color-sidebar-primary: oklch(0.205 0 0);
-  --color-sidebar-primary-foreground: oklch(0.985 0 0);
-  --color-sidebar-accent: oklch(0.97 0 0);
-  --color-sidebar-accent-foreground: oklch(0.205 0 0);
-  --color-sidebar-border: oklch(0.922 0 0);
-  --color-sidebar-ring: oklch(0.708 0 0);
-  --color-chart-1: oklch(0.81 0.1 252);
-  --color-chart-2: oklch(0.62 0.19 260);
-  --color-chart-3: oklch(0.55 0.22 263);
-  --color-chart-4: oklch(0.49 0.22 264);
-  --color-chart-5: oklch(0.42 0.18 266);
+  --color-border: oklch(0.9220 0 0);
+  --color-input: oklch(0.9220 0 0);
+  --color-ring: oklch(0.7080 0 0);
+  --color-sidebar: oklch(0.9850 0 0);
+  --color-sidebar-foreground: oklch(0.1450 0 0);
+  --color-sidebar-primary: oklch(0.2050 0 0);
+  --color-sidebar-primary-foreground: oklch(0.9850 0 0);
+  --color-sidebar-accent: oklch(0.9700 0 0);
+  --color-sidebar-accent-foreground: oklch(0.2050 0 0);
+  --color-sidebar-border: oklch(0.9220 0 0);
+  --color-sidebar-ring: oklch(0.7080 0 0);
+  --color-chart-1: oklch(0.8100 0.1000 252);
+  --color-chart-2: oklch(0.6200 0.1900 260);
+  --color-chart-3: oklch(0.5500 0.2200 263);
+  --color-chart-4: oklch(0.4900 0.2200 264);
+  --color-chart-5: oklch(0.4200 0.1800 266);
 
   --radius: 0.625rem;
   --radius-lg: var(--radius);
@@ -46,13 +46,9 @@
   --radius-sm: calc(var(--radius) - 4px);
   --spacing: 0.25rem;
 
-  --font-sans:
-    "Noto Sans SC", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  --font-sans: "Noto Sans SC", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Noto Serif SC", ui-serif, Georgia, "Times New Roman", serif;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   --shadow-sm: 0 1px 3px 0px oklch(0 0 0);
 
@@ -60,57 +56,49 @@
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
   @keyframes accordion-down {
-    from {
-      height: 0;
-    }
-    to {
-      height: var(--radix-accordion-content-height);
-    }
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
   }
 
   @keyframes accordion-up {
-    from {
-      height: var(--radix-accordion-content-height);
-    }
-    to {
-      height: 0;
-    }
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
   }
 }
 
 .dark {
-  --color-background: oklch(0.165 0.01 250);
-  --color-foreground: oklch(0.955 0.008 85);
-  --color-card: oklch(0.215 0.01 250);
-  --color-card-foreground: oklch(0.955 0.008 85);
-  --color-popover: oklch(0.245 0.01 250);
-  --color-popover-foreground: oklch(0.955 0.008 85);
-  --color-primary: oklch(0.72 0.11 165);
-  --color-primary-foreground: oklch(0.18 0.03 165);
-  --color-secondary: oklch(0.265 0.01 250);
-  --color-secondary-foreground: oklch(0.955 0.008 85);
-  --color-muted: oklch(0.265 0.01 250);
-  --color-muted-foreground: oklch(0.708 0.008 250);
-  --color-accent: oklch(0.3 0.04 165);
-  --color-accent-foreground: oklch(0.9 0.05 165);
-  --color-destructive: oklch(0.704 0.191 22.216);
-  --color-destructive-foreground: oklch(0.985 0 0);
-  --color-border: oklch(0.275 0 0);
-  --color-input: oklch(0.325 0 0);
-  --color-ring: oklch(0.556 0 0);
-  --color-sidebar: oklch(0.205 0 0);
-  --color-sidebar-foreground: oklch(0.985 0 0);
-  --color-sidebar-primary: oklch(0.488 0.243 264.376);
-  --color-sidebar-primary-foreground: oklch(0.985 0 0);
-  --color-sidebar-accent: oklch(0.269 0 0);
-  --color-sidebar-accent-foreground: oklch(0.985 0 0);
-  --color-sidebar-border: oklch(0.275 0 0);
-  --color-sidebar-ring: oklch(0.439 0 0);
-  --color-chart-1: oklch(0.81 0.1 252);
-  --color-chart-2: oklch(0.62 0.19 260);
-  --color-chart-3: oklch(0.55 0.22 263);
-  --color-chart-4: oklch(0.49 0.22 264);
-  --color-chart-5: oklch(0.42 0.18 266);
+  --color-background: oklch(0.1650 0.0100 250);
+  --color-foreground: oklch(0.9550 0.0080 85);
+  --color-card: oklch(0.2150 0.0100 250);
+  --color-card-foreground: oklch(0.9550 0.0080 85);
+  --color-popover: oklch(0.2450 0.0100 250);
+  --color-popover-foreground: oklch(0.9550 0.0080 85);
+  --color-primary: oklch(0.7200 0.1100 165);
+  --color-primary-foreground: oklch(0.1800 0.0300 165);
+  --color-secondary: oklch(0.2650 0.0100 250);
+  --color-secondary-foreground: oklch(0.9550 0.0080 85);
+  --color-muted: oklch(0.2650 0.0100 250);
+  --color-muted-foreground: oklch(0.7080 0.0080 250);
+  --color-accent: oklch(0.3000 0.0400 165);
+  --color-accent-foreground: oklch(0.9000 0.0500 165);
+  --color-destructive: oklch(0.7040 0.1910 22.2160);
+  --color-destructive-foreground: oklch(0.9850 0 0);
+  --color-border: oklch(0.2750 0 0);
+  --color-input: oklch(0.3250 0 0);
+  --color-ring: oklch(0.5560 0 0);
+  --color-sidebar: oklch(0.2050 0 0);
+  --color-sidebar-foreground: oklch(0.9850 0 0);
+  --color-sidebar-primary: oklch(0.4880 0.2430 264.3760);
+  --color-sidebar-primary-foreground: oklch(0.9850 0 0);
+  --color-sidebar-accent: oklch(0.2690 0 0);
+  --color-sidebar-accent-foreground: oklch(0.9850 0 0);
+  --color-sidebar-border: oklch(0.2750 0 0);
+  --color-sidebar-ring: oklch(0.4390 0 0);
+  --color-chart-1: oklch(0.8100 0.1000 252);
+  --color-chart-2: oklch(0.6200 0.1900 260);
+  --color-chart-3: oklch(0.5500 0.2200 263);
+  --color-chart-4: oklch(0.4900 0.2200 264);
+  --color-chart-5: oklch(0.4200 0.1800 266);
 }
 
 @layer base {
@@ -120,6 +108,32 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  :root {
+    /* 代码高亮：GitHub Light 色系 */
+    --code-plain: #24292e;
+    --code-comment: #6a737d;
+    --code-keyword: #d73a49;
+    --code-string: #032f62;
+    --code-number: #005cc5;
+    --code-type: #e36209;
+    --code-function: #6f42c1;
+    --code-variable: #e36209;
+    --code-deletion: #b31d28;
+  }
+
+  .dark {
+    /* 代码高亮：GitHub Dark 色系 */
+    --code-plain: #c9d1d9;
+    --code-comment: #8b949e;
+    --code-keyword: #ff7b72;
+    --code-string: #a5d6ff;
+    --code-number: #79c0ff;
+    --code-type: #ffa657;
+    --code-function: #d2a8ff;
+    --code-variable: #ffa657;
+    --code-deletion: #ffdcd7;
   }
 }
 
@@ -153,10 +167,72 @@
   @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.875em];
 }
 .markdown-body pre {
-  @apply overflow-x-auto rounded-lg bg-muted p-4 my-5 text-sm leading-6;
+  @apply overflow-hidden bg-muted text-sm leading-6;
 }
 .markdown-body pre code {
-  @apply bg-transparent p-0;
+  @apply block bg-transparent p-4 overflow-x-auto font-mono text-[0.875em] leading-6;
+}
+
+/* ————— 代码高亮配色（highlight.js token，跟随亮/暗主题）————— */
+.markdown-body .hljs {
+  color: var(--code-plain);
+  background: transparent;
+}
+.markdown-body .hljs-comment,
+.markdown-body .hljs-quote {
+  color: var(--code-comment);
+  font-style: italic;
+}
+.markdown-body .hljs-keyword,
+.markdown-body .hljs-selector-tag,
+.markdown-body .hljs-literal,
+.markdown-body .hljs-doctag,
+.markdown-body .hljs-meta {
+  color: var(--code-keyword);
+}
+.markdown-body .hljs-string,
+.markdown-body .hljs-regexp,
+.markdown-body .hljs-addition,
+.markdown-body .hljs-attribute,
+.markdown-body .hljs-meta .hljs-string {
+  color: var(--code-string);
+}
+.markdown-body .hljs-number,
+.markdown-body .hljs-symbol,
+.markdown-body .hljs-bullet,
+.markdown-body .hljs-link {
+  color: var(--code-number);
+}
+.markdown-body .hljs-title,
+.markdown-body .hljs-section,
+.markdown-body .hljs-title.function_ {
+  color: var(--code-function);
+}
+.markdown-body .hljs-built_in,
+.markdown-body .hljs-class .hljs-title,
+.markdown-body .hljs-title.class_ {
+  color: var(--code-type);
+}
+.markdown-body .hljs-attr,
+.markdown-body .hljs-variable,
+.markdown-body .hljs-template-variable,
+.markdown-body .hljs-type,
+.markdown-body .hljs-selector-class,
+.markdown-body .hljs-selector-id {
+  color: var(--code-variable);
+}
+.markdown-body .hljs-deletion {
+  color: var(--code-deletion);
+}
+/* 代码块头部：语言标识 + 复制按钮 */
+.code-block-header {
+  @apply flex items-center justify-between px-4 py-2 bg-muted/80 border-b border-border;
+}
+.code-block-language {
+  @apply text-xs font-medium text-muted-foreground uppercase tracking-wider;
+}
+.code-block-copy-btn {
+  @apply inline-flex items-center justify-center rounded-md p-1.5 text-muted-foreground hover:text-foreground hover:bg-background/50 transition-colors;
 }
 .markdown-body a {
   @apply text-primary underline underline-offset-2;
