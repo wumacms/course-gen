@@ -2,6 +2,14 @@
 
 基于 AI 的中文课程生成平台：输入一个课程主题，自动生成课程标题、封面、完整章节目录，并支持逐节（或一键并行）生成讲义内容。
 
+## 截图
+
+![截图](./docs/images/screenshot_01.avif)
+
+![截图](./docs/images/screenshot_02.avif)
+
+![截图](./docs/images/screenshot_03.avif)
+
 ## 功能特性
 
 - **AI 课程生成流水线**：主题 → 课程标题（DeepSeek）→ 章节目录 → 小节讲义，三步渐进
@@ -15,12 +23,12 @@
 
 ## 技术栈
 
-| 层 | 技术 |
-| --- | --- |
-| 前端 | React 18 + TypeScript + Vite 5 + TailwindCSS v4 + shadcn/ui + react-router v6 + TanStack Query |
-| 后端 | Supabase（Postgres + Auth + Realtime + RLS + Edge Functions） |
-| AI | DeepSeek Chat Completions（用户自带 Key，服务端代理调用） |
-| 包管理 | pnpm |
+| 层     | 技术                                                                                           |
+| ------ | ---------------------------------------------------------------------------------------------- |
+| 前端   | React 18 + TypeScript + Vite 5 + TailwindCSS v4 + shadcn/ui + react-router v6 + TanStack Query |
+| 后端   | Supabase（Postgres + Auth + Realtime + RLS + Edge Functions）                                  |
+| AI     | DeepSeek Chat Completions（用户自带 Key，服务端代理调用）                                      |
+| 包管理 | pnpm                                                                                           |
 
 ## 快速开始
 
